@@ -3,31 +3,25 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro anos
-		inteiro meses
-		inteiro dias
-		inteiro media
-		inteiro ano
+		inteiro totalDias,anos,meses,dias
 
-		escreva("Quantos dias você tem: ")
-		leia(anos)
+		escreva("\nEntre com o total de dias vividos: ")
+		leia(totalDias) // 1000
 
-		ano = anos / 365 // dias/365
-		meses = anos / 12 //30/12     
-		dias = anos / 1
+		anos = totalDias / 365 //1000 / 365 = 2
+		meses = (totalDias % 365) / 30 // 1000 % 365 = 270 / 30 = 9
+		dias = (totalDias % 365) % 30 // 1000 % 365 = 270 % 30 = 0
 
-		escreva("\nVocê tem " + ano + "anos")
-		escreva("\nVocê tem " + meses + "meses")
-		escreva("\nVocê tem " + dias + "dias")
-		
+		escreva("\nVocê viveu "+anos+"anos"+meses+"meses e "+ dias+"dias de vida")
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 229; 
+ * @POSICAO-CURSOR = 390; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
