@@ -11,11 +11,11 @@ programa
 
 		para(inteiro i=0;i<10;i++)
 		{
-			escreva("\nEntre com um número: ")
+			escreva("\nEntre com o lançamento: ")
 			leia(vec[i])
-			total = total + vec[i]
+			total = total + vec[i]	
 
-			se (vec[i] < maiorN)
+			se (maiorN < vec[i])
 			{
 			maiorN = vec[i] 			
 		     }
@@ -24,9 +24,9 @@ programa
 		
 		para(inteiro i=0;i<10;i++)
 		{
-			se(vec[i] == maiorN)
+			se(maiorN == vec[i])
 			{
-			cont++
+			cont = cont + 1 //cont++
 			}
 		}
 		para(inteiro i=0;i<10;i++)
@@ -52,9 +52,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 562; 
+ * @POSICAO-CURSOR = 413; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {vec, 9, 10, 3}-{maiorN, 9, 19, 6}-{cont, 9, 31, 4}-{media, 10, 7, 5}-{total, 10, 14, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
